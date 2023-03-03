@@ -30,3 +30,5 @@ table = table.pivot(columns = "info", values = "stat")
 table_fill = table.bfill()
 
 table_fill.drop(range(1, len(table_fill)))
+
+print(table_fill)

@@ -5,6 +5,8 @@ painful_strings = {'painful_strings':
 
 long_strings = pd.DataFrame(data=painful_strings)
 
-long_strings['painful_strings'].str.replace(
+long_strings = long_strings['painful_strings'].str.replace(
     pat='([a-z])([A-Z])',
     repl='\\1 \\2')
+
+print(long_strings)
